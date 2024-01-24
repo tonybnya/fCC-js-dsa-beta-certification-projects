@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a23;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: #1b1b32;
+    width: 80%;
+    height: 50vh;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.definition {
+    background-color: #3b3b4f;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.definition p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+.bulb {
+    color: #f1be32;
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.palindrome,
+.text {
+    font-weight: bold;
+    color: #f1be32;
+}
+
+#text-input,
+#check-btn {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+#text-input {
+    width: 500px;
+}
+
+#text-input:focus {
+    outline: none;
+}
+
+#check-btn {
+    color: #fff;
+    background-color: #002ead;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#check-btn:hover {
+    scale: 1.1;
+    background-color: #fff;
+    color: #002ead;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 390px) {
+    .container {
+        height: 70vh;
+        margin: 50px auto;
+    }
+
+    #logo {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .definition {
+        padding: 20px 20px;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+
+    .definition p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 200;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text-input {
+        width: 250px;
+    }
+
+    #check-btn {
+        color: #fff;
+        background-color: #002ead;
+        width: 100px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #result {
+        width: 80vw;
+        padding: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
