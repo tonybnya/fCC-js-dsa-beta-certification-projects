@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" type="image/x-icon"
+    href="https://i.postimg.cc/XYjywgF2/favicon.png" />
+</head>
+<body>
+    <header id="header">
+        <img class="logo" src="https://i.postimg.cc/PqNp7rSY/logo.png"
+    alt="freeCodeCamp logo">
+    </header>
+    <div id="container">
+        <div class="table-container">
+            <p class="note">
+                <span><strong>Note:</strong> Roman numerals are based on seven symbols and can be written using various combinations to represent Arabic numerals. For example:</span>
+            </p>
+            <table>
+                <tr>
+                    <th>Roman numerals</th>
+                    <th>Arabic numerals</th>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>CM</td>
+                    <td>900</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>CD</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>XC</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>IX</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <div class="converter-container">
+            <h1 class="title">Roman Numeral Converter</h1>
+            <label for="number">Enter a number:</label>
+            <input placeholder="Your number" value="" type="number" name="decimal number input" id="number" />
+            <button id="convert-btn">Convert</button>
+            <div id="output">...</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
