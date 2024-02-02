@@ -1,5 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Righteous&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+body,
+#content {
+    background-color: #0a0a23;
+}
+
+#logo,
+label,
+#user-input {
+    display: block;
+}
+
+#logo {
+    width: 20%;
+    margin: 40px auto;
+}
+
+#title,
+label,
+#controls {
+    text-align: center;
+}
+
+#title,
+.btn {
+    font-family: 'Righteous', sans-serif;
+    letter-spacing: 2px;
+}
+
+#phone {
+    background-color: #1b1b32;
+    height: 60vh;
+    width: 20vw;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+#circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+#content {
+    height: 80%;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+label,
+#user-input {
+    margin: 5px auto;
+}
+
+label,
+.btn {
+    font-size: 20px;
+}
+
+#user-input {
+    height: 30px;
+    width: 70%;
+    padding: 0 10px;
+}
+
+#user-input:focus {
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #002ead;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0a0a23;
+}
+
+#content,
+.btn,
+#user-input {
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+    line-height: 1.2;
+    margin: 10px auto;
+}
+
+.is-us-true,
+.is-us-false {
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    margin: 15px auto;
+}
+
+.is-us-true {
+    color: #4d3800;
+}
+
+@media (max-width: 390px) {
+    #phone {
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+
+    #logo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #phone {
+        width: 60vw;
+    }
 }

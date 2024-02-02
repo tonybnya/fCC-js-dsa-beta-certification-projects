@@ -4,9 +4,30 @@
     <meta charset="UTF-8" />
     <title>Telephone Number Validator</title>
     <link rel="stylesheet" href="./styles.css" />
+        <link rel="shortcut icon" type="image/x-icon"
+        href="https://i.postimg.cc/XYjywgF2/favicon.png" />
 </head>
 <body>
-    <h1>Telephone Number Validator</h1>
+    <img id="logo" src="https://i.postimg.cc/PqNp7rSY/logo.png"
+    alt="freeCodeCamp logo">
+    <h1 id="title">US Phone Number Validator</h1>
+
+    <div id="phone">
+        <div id="circle"></div>
+        <div id="content">
+            <label for="user-input">Enter a phone number:</label>
+            <input id="user-input" type="text" name="user input"
+            placeholder="phone number..." />
+            <div id="results-div">
+                <!-- <p>Invalid US number:<br /><span class="is-us-false">697798853</span></p> -->
+                <!-- <p>Valid US number:<br /><span class="is-us-true">(555) 555-1234</span></p> -->
+            </div>
+        </div>
+        <div id="controls">
+            <button id="check-btn" class="btn" type="button">Check</button>
+            <button id="clear-btn" class="btn" type="button">Clear</button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
