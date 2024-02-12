@@ -1,5 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Righteous&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a23;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+#logo {
+  width: 20%;
+  margin: 50px 0;
+  display: block;
+}
+
+#logo,
+#container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#title,
+#purchase-btn,
+#total,
+#subtitle,
+th {
+  font-family: 'Righteous', sans-serif;
+}
+
+#container {
+  width: 70%;
+  display: flex;
+  gap: 5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 35%;
+}
+
+th {
+  background-color: #4d3800;
+  color: #fff;
+}
+
+td {
+  font-weight: 300;
+}
+
+th,
+td {
+  border: 1px solid #f1be32;
+  padding: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #1b1b32;
+}
+
+label,
+#cash,
+#purchase-btn {
+  font-size: 20px;
+}
+
+#cash,
+#purchase-btn {
+  display: block;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#cash {
+  padding: 8px;
+}
+
+#cash:focus {
+  outline: none;
+}
+
+#purchase-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #002ead;
+}
+
+#purchase-btn:hover {
+  color: #002ead;
+  background-color: #fff;
+}
+
+#change-due {
+  margin-top: 20px;
+}
+
+#change-due,
+#total,
+#drawer {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+#total,
+#subtitle {
+  margin-bottom: 10px;
+}
+
+#total {
+  padding: 4px;
+  background-color: #99c9ff;
+  text-align: center;
+  border-radius: 5px;
+  color: #0a0a23;
+}
+
+#subtitle {
+  color: #f1be32;
+}
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+  }
 }
