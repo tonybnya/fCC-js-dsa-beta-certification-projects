@@ -1,7 +1,7 @@
 let price = 19.5;
 let cid = [
   ["PENNY", 1.01],
-  ["NICKLE", 2.05],
+  ["NICKEL", 2.05],
   ["DIME", 3.1],
   ["QUARTER", 4.25],
   ["ONE", 90],
@@ -15,7 +15,7 @@ const cashInput = document.getElementById("cash");
 const changeDue = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
 
-purchaseBtn.addEventListener("click", function() {
+const calculateChange = () => {
   const cashProvided = parseFloat(cashInput.value);
 
   let change = cashProvided - price;
@@ -58,4 +58,6 @@ purchaseBtn.addEventListener("click", function() {
   } else {
     changeDue.textContent = "Status: OPEN " + changeArray.map(item => item.join(": $")).sort().join(" ");
   }
-});
+};
+
+purchaseBtn.addEventListener("click", calculateChange);

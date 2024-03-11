@@ -1,83 +1,92 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Cash Register</title>
-        <link rel="stylesheet" href="./styles.css" />
-        <link rel="shortcut icon" type="image/x-icon"
-        href="https://i.postimg.cc/XYjywgF2/favicon.png" />
-    </head>
-    <body>
-        <header>
-            <img id="logo" src="https://i.postimg.cc/PqNp7rSY/logo.png" alt="">
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./static/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./static/images/favicon.png"
+    />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./static/images/logo.png" alt="logo" />
+    </header>
 
-        <h1 id="title">Cash Register</h1>
+    <h1 id="title">Cash Register</h1>
 
-        <div id="container">
-            <table>
-                <tr>
-                    <th>Currency unit</th>
-                    <th>Amount</th>
-                </tr>
-                <tr>
-                    <td>Penny</td>
-                    <td>$0.01 (PENNY)</td>
-                </tr>
-                <tr>
-                    <td>Nickle</td>
-                    <td>$0.05 (NICKEL)</td>
-                </tr>
-                <tr>
-                    <td>Dime</td>
-                    <td>$0.1 (DIME)</td>
-                </tr>
-                <tr>
-                    <td>Quarter</td>
-                    <td>$0.25 (QUARTER)</td>
-                </tr>
-                <tr>
-                    <td>Dollar</td>
-                    <td>$1 (ONE)</td>
-                </tr>
-                <tr>
-                    <td>Five Dollars</td>
-                    <td>$5 (FIVE)</td>
-                </tr>
-                <tr>
-                    <td>Ten Dollars</td>
-                    <td>$10 (TEN)</td>
-                </tr>
-                <tr>
-                    <td>Twenty Dollars</td>
-                    <td>$20 (TWENTY)</td>
-                </tr>
-                <tr>
-                    <td>One Hundred Dollars</td>
-                    <td>$100 (ONE HUNDRED)</td>
-                </tr>
-            </table>
-            <div id="cash-register">
-                <label for="cash">Enter cash for customer:</label>
-                <input placeholder="Your cash" value="" type="number" name="number input" id="cash" />
-                <button id="purchase-btn">Purchase</button>
-                <div id="change-due"></div>
-            </div>
-            <div id="drawer">
-                <p id="total">Total: $<span id="price">19.5</span></p>
-                <h3 id="subtitle">Change in drawer:</h3>
-                <p>Pennies: $<span id="pennies">1.01</span></p>
-                <p>Nickels: $<span id="nickels">2.05</span></p>
-                <p>Dimes: $<span id="dimes">3.1</span></p>
-                <p>Quarters: $<span id="quarters">4.25</span></p>
-                <p>Ones: $<span id="ones">90</span></p>
-                <p>Fives: $<span id="fives">55</span></p>
-                <p>Tens: $<span id="tens">20</span></p>
-                <p>Twenties: $<span id="twenties">60</span></p>
-                <p>Hundreds: $<span id="hundreds">100</span></p>
-            </div>
-        </div>
+    <div id="container">
+      <table>
+        <tr>
+          <th>Currency unit</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Penny</td>
+          <td>$0.01 (PENNY)</td>
+        </tr>
+        <tr>
+          <td>Nickel</td>
+          <td>$0.05 (NICKLE)</td>
+        </tr>
+        <tr>
+          <td>Dime</td>
+          <td>$0.1 (DIME)</td>
+        </tr>
+        <tr>
+          <td>Quarter</td>
+          <td>$0.25 (QUARTER)</td>
+        </tr>
+        <tr>
+          <td>Dollar</td>
+          <td>$1 (ONE)</td>
+        </tr>
+        <tr>
+          <td>Five Dollars</td>
+          <td>$5 (FIVE)</td>
+        </tr>
+        <tr>
+          <td>Ten Dollars</td>
+          <td>$10 (TEN)</td>
+        </tr>
+        <tr>
+          <td>Twenty Dollars</td>
+          <td>$20 (TWENTY)</td>
+        </tr>
+        <tr>
+          <td>One Hundred Dollars</td>
+          <td>$100 (ONE HUNDRED)</td>
+        </tr>
+      </table>
+      <div id="cash-register">
+        <label for="cash">Enter cash for customer:</label>
+        <input
+          placeholder="Your cash"
+          value=""
+          type="number"
+          name="number input"
+          id="cash"
+        />
+        <button id="purchase-btn">Purchase</button>
+        <div id="change-due"></div>
+      </div>
+      <div id="drawer">
+        <p id="total">Total: $<span id="price">19.5</span></p>
+        <h3 id="subtitle">Change in drawer:</h3>
+        <p>Pennies: $<span id="pennies">1.01</span></p>
+        <p>Nickels: $<span id="nickels">2.05</span></p>
+        <p>Dimes: $<span id="dimes">3.1</span></p>
+        <p>Quarters: $<span id="quarters">4.25</span></p>
+        <p>Ones: $<span id="ones">90</span></p>
+        <p>Fives: $<span id="fives">55</span></p>
+        <p>Tens: $<span id="tens">20</span></p>
+        <p>Twenties: $<span id="twenties">60</span></p>
+        <p>Hundreds: $<span id="hundreds">100</span></p>
+      </div>
+    </div>
 
-        <script src="./script.js"></script>
-    </body>
-    </html>
+    <script src="./static/script.js"></script>
+  </body>
+</html>
