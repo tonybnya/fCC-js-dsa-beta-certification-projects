@@ -1,24 +1,25 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+// const searchInput = document.getElementById("search-input");
+// const searchBtn = document.getElementById("search-button");
+const allPokemonsUrl = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const formatInput = (input) => {
+  // lowercase the input
+  let string = input.toLowerCase();
 
-setupCounter(document.querySelector('#counter'))
+  // Replace special characters for gender
+  // \u2640: Unicode character for the female symbol (♀)
+  // \u2642: Unicode character for the male symbol (♂)
+  string = string.replace(/[\u2640\u2642]/g, (match) => {
+    return match === "\u2640" ? "f" : "m";
+  });
+  
+  // remove special characters and replace empty spaces by '-'
+  string = string.replace(/[^a-z0-9\s]/g, '').replace(/\s/g, '-');
+
+  return string;
+};
+
+console.log(formatInput("Pikachu")); // pikachu
+console.log(formatInput("Nirodan ♀")); // nirodan-f
+console.log(formatInput("Nirodan ♂")); // nirodan-m
+console.log(formatInput("Mr. Mime")); // mr-mime
