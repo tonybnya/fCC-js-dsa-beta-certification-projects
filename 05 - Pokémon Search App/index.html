@@ -1,33 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Search App</title>
   </head>
   <body>
     <nav id="navbar">
-      <img src="./public/logo.png" alt="pokemon logo" id="logo" />
+      <img src="/logo.png" alt="pokemon logo" id="logo" />
       <h1 class="title">Pokémon Search App</h1>
     </nav>
 
     <div id="app">
       <h3 class="subtitle">Search for Pokémon Name or ID:</h3>
       <form action="">
-        <input type="text" name="" id="search-input" />
+        <input type="text" name="" id="search-input" required />
         <button id="search-button">Search</button>
       </form>
 
       <div id="pokemon-description">
         <div class="biometric">
-          <p id="identification"><span id="pokemon-name">PIKACHU</span> #<span id="pokemon-id">25</span></p>
-          <p id="biometric">Weight: <span id="weight">60</span> Height: <span id="height">4</span></p>
-          <div id="types">electric</div>
+          <p id="identification">
+            <span id="pokemon-name"></span> <span id="pokemon-id"></span>
+          </p>
+          <p id="biometric"></p>
+          <div id="types"></div>
         </div>
 
-        <img src="./public/favicon.png" alt="">
+        <img src="" alt="" />
       </div>
 
       <div id="pokemon-data">
